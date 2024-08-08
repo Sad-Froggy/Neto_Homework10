@@ -2,8 +2,8 @@ package netology;
 
 public class Radio {
 
-    int currentVolume;
-    int currentStation;
+    private int currentVolume;
+    private int currentStation;
 
     public void setCurrentVolume(int currentVolume) {
         if (currentVolume >= 0 && currentVolume <= 100) {
