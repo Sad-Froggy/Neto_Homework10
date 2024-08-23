@@ -1,27 +1,22 @@
 package netology;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class Radio {
 
+    @Getter
     private int currentVolume;
+    @Getter
     private int currentStation;
     private int channelAmount = 10;
     private int maxChannel = channelAmount - 1;
     private final int MAX_VOLUME = 100;
     private final int MIN_VOLUME = 0;
 
-    public Radio() {
-    }
-
     public Radio(int channelAmount) {
         this.channelAmount = channelAmount;
-    }
-
-    public int getCurrentVolume() {
-        return currentVolume;
-    }
-
-    public int getCurrentStation() {
-        return currentStation;
     }
 
     public void setCurrentVolume(int currentVolume) {
