@@ -9,7 +9,7 @@ public class RadioTest {
 
     @BeforeEach
     public void init() {
-        radio = new Radio();
+        radio = new Radio(10);
     }
 
     @Test
